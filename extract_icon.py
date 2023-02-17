@@ -1,7 +1,7 @@
 from PIL import Image
-import win32gui  # pip package pypiwin32; has to be imported this way
-import win32ui  # pip package pypiwin32; has to be imported this way
-import win32api  # pip package pypiwin32; has to be imported this way
+import win32gui  # pip package pywin32; has to be imported this way
+import win32ui  # pip package pywin32; has to be imported this way
+import win32api  # pip package pywin32; has to be imported this way
 
 def extract_icon(exe_path: str, hwnd: int) -> Image: 
     width = height = 32
