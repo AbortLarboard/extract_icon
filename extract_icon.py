@@ -5,7 +5,7 @@ import win32api  # pip package pywin32; has to be imported this way
 
 def extract_icon(exe_path: str, hwnd: int) -> Image: 
     width = height = 32
-    """get the first resource icon from exefilename and returns it as PIL Image"""
+    """get the first resource icon from exefilename and return it as PIL Image"""
     ico_x = win32api.GetSystemMetrics(win32con.SM_CXICON)
     try:
         large, small = win32gui.ExtractIconEx(exe_path, 0)
