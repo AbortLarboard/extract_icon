@@ -11,7 +11,7 @@ def extract_icon(exe_path: str, hwnd: int) -> Image:
         large, small = win32gui.ExtractIconEx(exe_path, 0)
 
     except Exception as e:
-        raise (e)
+        raise e
 
     if large: 
         wdc = win32gui.GetDC(hwnd)
